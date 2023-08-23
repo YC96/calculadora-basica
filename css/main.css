@@ -1,0 +1,91 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  background-color: rgb(192, 200, 206);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculadora{
+  background-color: #0f101a;
+  color: white;
+  width: 400px;
+  max-width: 100%;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: .5rem;
+}
+
+#pantalla{
+  grid-column: 1/-1;
+  background-color: #0f101a;
+  font-size: 3.5rem;
+  text-align: right;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.btn{
+  background-color: #484848;
+  color: white;
+  border: 0;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+}
+
+.btn:hover{
+  background-color: #636363;
+}
+
+#cero{
+  grid-column: 1/3;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+}
+
+#limpiar,#borrar,#porcentaje{
+  background-color: #696969
+}
+
+#limpiar:hover,#borrar:hover,#porcentaje:hover{
+  background-color: #808080
+}
+
+#plus,#igual,#por,#division,#menos{
+  background-color: #fb6a35;
+}
+
+#plus:hover,#igual:hover,#por:hover,#division:hover,#menos:hover{
+  background-color: #F1916D;
+}
+
